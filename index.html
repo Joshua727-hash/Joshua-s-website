@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua M Livingstone | Home</title>
+    <!-- Imports Font Awesome Icons for Instagram and TikTok -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+
+        /* Base Setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0b0f19;
+            color: #f1f5f9;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Profile Layout Container */
+        .profile-container {
+            background-color: #1e293b;
+            border: 1px solid rgba(244, 63, 94, 0.1);
+            padding: 3rem 2rem;
+            border-radius: 16px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Profile Image Styling */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #f43f5e;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 10px rgba(244, 63, 94, 0.3);
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .welcome-msg {
+            color: #10b981;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 1.5rem 0;
+            background-color: #0f172a;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            display: inline-block;
+        }
+
+        /* Social Icons Styles */
+        .social-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0 2rem;
+        }
+
+        .social-icon {
+            font-size: 1.8rem;
+            color: #94a3b8;
+            transition: all 0.2s ease-in-out;
+            text-decoration: none;
+        }
+
+            .social-icon:hover {
+                color: #f43f5e;
+                transform: scale(1.15);
+                text-shadow: 0 0 10px rgba(244, 63, 94, 0.5);
+            }
+
+        /* Modern Navigation Button */
+        .nav-btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(to right, #f43f5e, #fb7185);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+            .nav-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 20px rgba(244, 63, 94, 0.4);
+            }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Profile Image -->
+        <img src="terry.jpg" alt="Joshua M Livingstone" class="profile-img" onerror="this.src='https://placeholder.com';">
+
+        <!-- Main Intro Heading -->
+        <h1>Joshua M Livingstone</h1>
+
+        <!-- Welcome Message Banner -->
+        <div class="welcome-msg">Thank you for visiting my website</div>
+
+        <!-- Connected Active Social Links Profiles Section -->
+        <div class="social-container">
+            <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" class="social-icon" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+
+        <!-- Link Button to Hobbies page -->
+        <a href="hobbies.html" class="nav-btn">Go to my Hobbies Page &rarr;</a>
+    </div>
+</body>
+</html>

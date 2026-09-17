@@ -1,0 +1,183 @@
+﻿ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Hobbies</title>
+    <style>
+
+        /* Modern Base Setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0b0f19; /* Deep Obsidian Blue/Black */
+            color: #f1f5f9;
+        }
+
+        body {
+            line-height: 1.6;
+            padding: 4rem 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Typography */
+        .intro-tag {
+            color: #f43f5e; /* Vibrant Crimson/Rose Accent */
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            letter-spacing: -1px;
+            background: linear-gradient(to right, #f43f5e, #fb7185);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Hobbies Grid Layout */
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1100px;
+            margin-bottom: 4rem;
+        }
+
+        /* Creative Cards */
+        .hobby-card {
+            background-color: #1e293b;
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            border: 1px solid rgba(244, 63, 94, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+            .hobby-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: linear-gradient(to right, #f43f5e, #fb7185);
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+
+            .hobby-card:hover {
+                transform: translateY(-8px);
+                border-color: rgba(244, 63, 94, 0.4);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            }
+
+                .hobby-card:hover::before {
+                    opacity: 1;
+                }
+
+        .hobby-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        /* Specific style for embedded basketball image */
+        .basketball-img {
+            height: 2.5rem;
+            width: auto;
+            vertical-align: middle;
+        }
+
+        .hobby-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+            color: #ffffff;
+        }
+
+        .hobby-card p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        /* Clean Back Navigation Button */
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #94a3b8;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+            border-bottom: 1px dashed #475569;
+            padding-bottom: 2px;
+        }
+
+            .back-link:hover {
+                color: #f43f5e;
+                border-color: #f43f5e;
+            }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            body {
+                padding: 3rem 5%;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="intro-tag">Discover My World</p>
+    <h1>What I Do Outside of Coding</h1>
+    <div class="hobbies-grid">
+
+        <!-- Hobby 1: Basketball -->
+        <div class="hobby-card">
+            <div class="hobby-icon">
+                <img src="Basketball.png" alt="🏀" class="basketball-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                <span style="display:none;">🏀</span>
+            </div>
+            <h3>Basketball</h3>
+            <p>Hitting the courts to stay competitive, stay fit, and run full-court games with the team.</p>
+        </div>
+        <!-- Hobby 2: Manga & Comics -->
+        <div class="hobby-card">
+            <div class="hobby-icon">📚</div>
+            <h3>Manga & Comics</h3>
+            <p>Following epic storylines, especially masterpieces like <strong>JoJo's Bizarre Adventure</strong> alongside legendary comic runs like <strong>The Flash</strong> and <strong>Spider-Man</strong>.</p>
+        </div>
+        <!-- Hobby 3: Cooking -->
+        <div class="hobby-card">
+            <div class="hobby-icon">🍳</div>
+            <h3>Culinary Cooking</h3>
+            <p>Mastering the fundamentals in the kitchen—specialising in making the ultimate, perfectly crispy <strong>fried eggs</strong>.</p>
+        </div>
+        <!-- Hobby 4: Music -->
+        <div class="hobby-card">
+            <div class="hobby-icon">🎧</div>
+            <h3>Listening to Music</h3>
+            <p>Sourcing new alternative playlists and using background beats to dial in deep focus while coding.</p>
+        </div>
+    </div>
+    <!-- Home Navigation -->
+    <a href="index.html" class="back-link">&larr; Return to Home Page</a>
+</body>
+</html>
